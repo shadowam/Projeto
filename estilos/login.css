@@ -1,0 +1,359 @@
+* {
+   margin:0; 
+   padding:0;
+  }
+
+body {
+   background:#f0f0f0;
+   }
+
+
+/* TOPO DA PÁGINA */   
+
+div#topo {
+   width:100%;
+   height:90px;
+   background:#151515;
+   }
+
+div#top_conteudo {
+   position:relative;
+   margin:0 auto;
+   width:978px;
+   height:100%;
+   background:#151515;
+   }
+
+#top_conteudo p#site_nome  {
+   color:#fff;
+   position:absolute;
+   text-transform:uppercase;
+   font: 60px 'Droid Sans', sans-serif;
+   top:15px;
+   }  
+
+#top_conteudo p#site_nome span {
+   text-transform:uppercase;
+   color:#21A8DF;
+   font: 60px 'Droid Sans', sans-serif;
+   padding-right:4px;
+   }
+
+p#site_nome a {
+   text-decoration:none;
+   color:#fff;
+   }
+
+#top_conteudo a.painel img{
+   position:absolute;
+   width:30px;
+   height:30px;
+   right:15px;
+   top:15px; 
+   }
+
+
+
+#top_conteudo ul#nave {
+   position:absolute;
+   bottom:0;
+   left:0;
+  }   
+
+#top_conteudo form {
+   width:500px;
+   height:90px;
+   position:absolute;
+   right:0;
+   }
+
+#top_conteudo form input[name=email] {
+   position:absolute;
+   width:180px;
+   height:25px;
+   position:absolute;
+   right:235px;
+   top:43px;
+   font: 15px 'Droid Sans', sans-serif;
+   }
+
+#top_conteudo form input[name=senha_log] {
+   position:absolute;
+   right:70px;
+   top:43px;
+   width:150px;
+   height:25px;
+   font: 15px 'Droid Sans', sans-serif;
+   }
+
+#top_conteudo form input[name=enviar] {
+   position:absolute;
+   right:0;
+   top:43px;
+   width:60px;
+   height:29px;
+   cursor:pointer;
+   font-family:'Droid Sans', sans-serif;
+   }
+
+#top_conteudo form label[for=email] {
+   cursor:pointer;
+   position:absolute;
+   right:375px;
+   top:23px;
+   color:#fff;  
+   font-family:'Droid Sans', sans-serif;
+    }
+
+#top_conteudo form label[for=senha_log] {
+   cursor:pointer;
+   position:absolute;
+   right:180px;
+   top:23px;
+   color:#fff;  
+   font-family:'Droid Sans', sans-serif;
+    }
+
+
+
+/* CONTEÚDO DA PÁGINA */
+
+div#conteudo {
+   margin:10px auto;
+   width:978px;
+   background:#fff;  
+   border-radius:3px;
+   border: 1px solid #DCDCDC;
+   }
+
+div#conteudo h1 {
+   margin:75px 0 5px 10px;
+   font-weight: 500;
+   font: 50px 'Droid Sans', sans-serif;
+   }
+
+
+div#conteudo h3 {
+   margin:15px 0 5px 10px;
+   font-weight: 500;
+   font: 25px 'Droid Sans', sans-serif;
+   }
+
+div#conteudo h1 a {
+  text-decoration:none;
+  color:#21A8DF;
+
+   }
+
+div#conteudo h1 a:hover {
+  text-decoration:underline;
+  transition:1s;
+  color:#21A8DF;
+   }
+
+div#conteudo:after {
+   content:".";
+   display:block;
+   height:0;
+   clear:both;
+   visibility:hidden;
+   }
+
+#conteudo .linha_conteudo {
+   clear:both;
+   height:1px;
+   width:948px;
+   border-bottom:1px solid #DCDCDC;
+   margin-left:13px;
+   }
+
+
+#conteudo img {
+  float:left;
+  margin-top:10px;
+  margin-left:10px;
+  width:500px;
+  height:450px;
+}
+
+#cadastro {
+   float:right;
+   padding-right:15px;
+   }
+/* RODAPÉ DA PÁGINA */   
+
+div#rodape {
+   width:100%;
+   height:100px;
+   background:#000;
+   }
+
+div#conteudo_rodape {
+   padding-top:12px;
+   color:#fff;
+   width:980px;
+   margin: 0 auto;
+}
+
+div#conteudo_rodape p {
+   font-family:'Droid Sans', sans-serif ;
+   }
+
+
+
+
+/* -- form  */
+
+
+body{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family:'Droid Sans', sans-serif ;
+}
+
+.txt{
+  height: 35px;
+  width: 350px;
+  border: none;
+  border-radius: 5px;
+  background-color: #EEE;
+  padding: 4px;
+}
+
+.txt:hover{
+  background-color: #CCC;
+}
+
+#cad_table{
+  width: 300px;
+  height: 250px;
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+}
+
+#btnEntrar{
+  width: 85px;
+  margin-left: 130px;
+  text-decoration: none;
+}
+
+#btnCad{
+  width: 85px;
+  margin-left: 130px;
+  text-decoration: none;
+}
+
+.botao{
+  cursor: pointer;
+  font: bold 18px Calibri;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+.botao a:link, .botao a:visited{
+  /* remove the offening underline */
+  text-decoration: none;
+  color: #333333;
+}
+
+.btn{
+  width: 100px;
+  height: 30px;
+  background-color: #EFEFEF;
+  border-radius: 4px;
+  border: 1px solid #CCC;
+}
+
+#login_table{
+  height: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+  margin-top: 250px;
+}
+
+/*Código para apagar o texto placeholder ao clicar no campo (chrome e firefox)*/
+:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+/*Código para mostrar imagem de válido/inválido nos campos de cadastro*/
+input:required:invalid, input:focus:invalid {
+  background-image: url(../imagens/invalid.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+input:required:valid {
+  background-image: url(../imagens/valid.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+
+/* CÓDIGO PARA DESIGN DOS LINKS PARA VALIDADOR DE HTML E CSS */
+#footerhtmlPanel{
+  width:86px;
+  height:31px;
+  position:relative;
+  margin:auto;
+  padding:0;
+  top:400px;
+  right:50px;
+} 
+
+#footerhtmlPanel a{
+  width:86px;
+  height:31px;
+  background:url(../imagens/html-img.gif) no-repeat 0 0 #FFFFFF;
+  text-decoration:none;
+  font:14px/31px "Trebuchet MS",Arial, Helvetica, sans-serif; color:#2F2F2F;
+  text-transform:uppercase;
+  position:absolute;
+  padding:0 0 0 10px;
+}
+
+#footerhtmlPanel a:hover{
+  background:url(../imagens/html-img.gif) no-repeat 0 0 #FFFFFF;
+  color:#216EBD;
+  text-decoration:none;
+}
+
+#footercssPanel{
+  width:75px;
+  height:31px;
+  position:relative;
+  margin:auto;
+  padding:0;
+  top:370px;
+  right:-50px;
+} 
+
+#footercssPanel a{
+  width:65px;
+  height:32px;
+  background:url(../imagens/css-img.gif) no-repeat 0 0 #FFFFFF;
+  text-decoration:none;
+  font:14px/31px "Trebuchet MS",Arial, Helvetica, sans-serif;
+  color:#2F2F2F;
+  text-transform:uppercase;
+  position:absolute;  
+  padding:0 0 0 10px;
+}
+
+#footercssPanel a:hover{
+  background:url(../imagens/css-img.gif) no-repeat 0 0 #FFFFFF;
+  color:#216EBD;
+  text-decoration:none;
+}
+/* FIM DO CÓDIGO PARA VALIDADORES */
