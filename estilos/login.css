@@ -99,7 +99,7 @@ p#site_nome a {
 #top_conteudo form label[for=email] {
    cursor:pointer;
    position:absolute;
-   right:375px;
+   right:380px;
    top:23px;
    color:#fff;  
    font-family:'Droid Sans', sans-serif;
