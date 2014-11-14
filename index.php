@@ -43,7 +43,7 @@
   	<div id="topo"> 
       <div id="top_conteudo">
         <form method="POST" action="login.php">
-          <label for="email">E-mail</label><input type="text" name="email" id="email" />
+          <label for="email">Login</label><input type="text" name="email" id="email" />
           <label for="senha_log">Senha</label><input type="password" name="senha_log" id="senha_log" />
           <input type="submit" name="enviar" value="ENTRAR" />
         </form>
@@ -82,7 +82,7 @@
                 <td><input title="Por favor, digite um e-mail válido." type="email" name="user_email" id="email" class="txt" placeholder="Digite e-mail válido." required pattern="[a-zA-Z0-9._\-]{2,}@[a-zA-Z0-9.\-]{2,}[.]{1}[a-zA-Z]{2,}"></td>           
               </tr>
               <tr>
-                <td>Usuário:</td>
+                <td>Login:</td>
                 <td><input title="Apenas letras e números são aceitos, sem espaço ou caracteres especiais." type="text" name="user_login" id="usuario"
                           class="txt" maxlength="15" placeholder="Seu login, digite apenas letras e números." required pattern="^[a-zA-Z0-9]{3,}">
                 </td>
