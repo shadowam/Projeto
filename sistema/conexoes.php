@@ -1,5 +1,7 @@
 <?php
 
+  $link = mysqli_connect(HOSTNAME, USUARIO, SENHA, BANCO) or die (mysqli_connect_error($link)); // Variável link recebe a conexão.
+  
   // FUNÇÕES DE CONEXÃO
   // Função que liga o banco
   Function ConectaBanco() {

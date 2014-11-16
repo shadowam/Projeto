@@ -10,7 +10,7 @@
     <meta name="description" content="Gêneros músicas, estilos, bandas e artistas"/>
     <meta name="author" content="minor S.A"/>
     <meta name="keywords" content="músicas, tudo sobre bandas, características das músicas brasileiras"/>
-    <link rel="stylesheet" type="text/css" href="estilos/estilo_prin.css" />
+    <link rel="stylesheet" type="text/css" href="../estilos/estilo_prin.css" />
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 
 </head>
@@ -21,9 +21,8 @@
 
     <div id="top_conteudo">
 	    
-	    <p id="site_nome"><a href="index.php" ><span>música</span>brasil</a></p>
-	    <p id="cadastro"><a href="#">Cadastro</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Login</a></p>
-      <a href="painel.php" class="painel"><img src="imagens/painel.png" alt="engrenagens" title="Obs: Só será visivel ao ADMIN !"/></a>
+	    <p id="site_nome"><a href="../index.php" ><span>música</span>brasil</a></p>
+      <a href="painel.php" class="painel"><img src="../imagens/painel.png" alt="engrenagens" title="Obs: Só será visivel ao ADMIN !"/></a>
 
 	    <div id="divisao"> </div>
 
@@ -48,14 +47,14 @@
 
 	<div id="conteudo">
        <h1><a href="painel.php">Painel de Controle</a> > Gêrenciar Gêneros</h1>
-       <a href="add-genero.php"><p id="add"> <img src="imagens/add.png" title="Adiconar um Novo Gênero" alt="Adiconar um Novo Gênero" /> <span>Adicionar</span> </p></a>  
+       <a href="add-genero.php"><p id="add"> <img src="../imagens/add.png" title="Adiconar um Novo Gênero" alt="Adiconar um Novo Gênero" /> <span>Adicionar</span> </p></a>  
 
        <div class="linha_conteudo"></div>
 
        <!-- INÍCIO DO PRIMEIRO BLOCO  -->
        <div class="bloco-esquerdo bloco-gerencia ">
 
-            <img src="imagens/jazz.jpg" />
+            <img src="../imagens/jazz.jpg" />
             <p class="titulo">Jazz</p>
             <p class="descri"><a href="#">EDITAR</a> | <a href="#">EXCLUIR</a></p>
 
@@ -63,7 +62,7 @@
 
        <div class="bloco-central bloco-gerencia ">
 
-            <img src="imagens/Electro-Music.png" />
+            <img src="../imagens/Electro-Music.png" />
             <p class="titulo">Música Eletrônica</p>
             <p class="descri"><a href="#">EDITAR</a> | <a href="#">EXCLUIR</a></p>
 
@@ -73,7 +72,7 @@
 
        <div class="bloco-direito bloco-gerencia ">
 
-            <img src="imagens/rock.jpg" />
+            <img src="../imagens/rock.jpg" />
             <p class="titulo">Rock</p>
             <p class="descri"><a href="#">EDITAR</a> | <a href="#">EXCLUIR</a></p>
 
@@ -86,7 +85,7 @@
        <!-- INÍCIO DO SEGUNDO BLOCO  -->
        <div class="bloco-esquerdo bloco-gerencia ">
 
-            <img src="imagens/rap-music.jpg" />
+            <img src="../imagens/rap-music.jpg" />
             <p class="titulo">Rap</p>
             <p class="descri"><a href="#">EDITAR</a> | <a href="#">EXCLUIR</a></p>
 
@@ -94,7 +93,7 @@
 
        <div class="bloco-central bloco-gerencia ">
 
-            <img src="imagens/pop-music.jpg" />
+            <img src="../imagens/pop-music.jpg" />
             <p class="titulo">Pop</p>
             <p class="descri"><a href="#">EDITAR</a> | <a href="#">EXCLUIR</a></p>
 
@@ -104,7 +103,7 @@
 
        <div class="bloco-direito bloco-gerencia ">
 
-            <img src="imagens/gospel.jpg" />
+            <img src="../imagens/gospel.jpg" />
             <p class="titulo">Gospel</p>
             <p class="descri"><a href="#">EDITAR</a> | <a href="#">EXCLUIR</a></p>
 
@@ -115,7 +114,7 @@
         <!-- INÍCIO DO TERCEIRO BLOCO  -->
        <div class="bloco-esquerdo bloco-gerencia" >
 
-            <img src="imagens/reggae.jpg" />
+            <img src="../imagens/reggae.jpg" />
             <p class="titulo">Raggae</p>
             <p class="descri"><a href="#">EDITAR</a> | <a href="#">EXCLUIR</a></p>
 
@@ -123,7 +122,7 @@
 
        <div class="bloco-central bloco-gerencia ">
 
-            <img src="imagens/classic.jpg" />
+            <img src="../imagens/classic.jpg" />
             <p class="titulo">Clássica</p>
             <p class="descri"><a href="#">EDITAR</a> | <a href="#">EXCLUIR</a></p>
 
@@ -133,7 +132,7 @@
 
        <div class="bloco-direito bloco-gerencia ">
 
-            <img src="imagens/funk.jpg" />
+            <img src="../imagens/funk.jpg" />
             <p class="titulo">Funk</p>
             <p class="descri"><a href="#">EDITAR</a> | <a href="#">EXCLUIR</a></p>
 

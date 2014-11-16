@@ -18,5 +18,5 @@
 	function LerRegistro($table, $parametros, $campos = "*") { // por default ele lê todos os campos "*";
 
 	}
-
+	
 ?>

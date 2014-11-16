@@ -101,7 +101,7 @@ div#conteudo {
    }
 
 div#conteudo h1 {
-   margin:75px 0 5px 10px;
+   margin:115px 0 5px 10px;
    font-weight: 500;
    font: 50px 'Droid Sans', sans-serif;
    }
@@ -154,7 +154,6 @@ div#conteudo:after {
    float:right;
    padding-right:15px;
    }
-
 /* RODAPÉ DA PÁGINA */   
 
 div#rodape {
@@ -197,22 +196,26 @@ body{
 }
 
 #cad_table{
-  width: 300px;
-  height: 250px;
+  width: 100px;
+  height: 200px;
   margin: 0 auto;
   padding: 10px;
   border: none;
 }
 
-#btnEntrar{
-  width: 85px;
-  margin-left: 130px;
-  text-decoration: none;
+#cad_table input[name=login1] {
+  margin-right: 60px;
+  width:250px;
 }
 
-#btnCad{
+#cad_table input[name=senha1] {
+  margin-right: 60px;
+  width:250px;
+}
+
+#btnEntrar{
   width: 85px;
-  margin-left: 130px;
+  margin-left: 220px;
   text-decoration: none;
 }
 
@@ -243,88 +246,12 @@ body{
   border: 1px solid #CCC;
 }
 
-#login_table{
-  height: 200px;
-  margin: 0 auto;
-  padding: 10px;
-  border: none;
-  margin-top: 250px;
-}
-
 /*Código para apagar o texto placeholder ao clicar no campo (chrome e firefox)*/
 :focus::-webkit-input-placeholder {
   opacity: 0;
 }
+
 :focus::-moz-placeholder {
   opacity: 0;
 }
 
-/*Código para mostrar imagem de válido/inválido nos campos de cadastro*/
-input:required:invalid, input:focus:invalid {
-  background-image: url(../imagens/invalid.png);
-  background-position: right top;
-  background-repeat: no-repeat;
-}
-input:required:valid {
-  background-image: url(../imagens/valid.png);
-  background-position: right top;
-  background-repeat: no-repeat;
-}
-
-
-/* CÓDIGO PARA DESIGN DOS LINKS PARA VALIDADOR DE HTML E CSS */
-#footerhtmlPanel{
-  width:86px;
-  height:31px;
-  position:relative;
-  margin:auto;
-  padding:0;
-  top:400px;
-  right:50px;
-} 
-
-#footerhtmlPanel a{
-  width:86px;
-  height:31px;
-  background:url(../imagens/html-img.gif) no-repeat 0 0 #FFFFFF;
-  text-decoration:none;
-  font:14px/31px "Trebuchet MS",Arial, Helvetica, sans-serif; color:#2F2F2F;
-  text-transform:uppercase;
-  position:absolute;
-  padding:0 0 0 10px;
-}
-
-#footerhtmlPanel a:hover{
-  background:url(../imagens/html-img.gif) no-repeat 0 0 #FFFFFF;
-  color:#216EBD;
-  text-decoration:none;
-}
-
-#footercssPanel{
-  width:75px;
-  height:31px;
-  position:relative;
-  margin:auto;
-  padding:0;
-  top:370px;
-  right:-50px;
-} 
-
-#footercssPanel a{
-  width:65px;
-  height:32px;
-  background:url(../imagens/css-img.gif) no-repeat 0 0 #FFFFFF;
-  text-decoration:none;
-  font:14px/31px "Trebuchet MS",Arial, Helvetica, sans-serif;
-  color:#2F2F2F;
-  text-transform:uppercase;
-  position:absolute;  
-  padding:0 0 0 10px;
-}
-
-#footercssPanel a:hover{
-  background:url(../imagens/css-img.gif) no-repeat 0 0 #FFFFFF;
-  color:#216EBD;
-  text-decoration:none;
-}
-/* FIM DO CÓDIGO PARA VALIDADORES */

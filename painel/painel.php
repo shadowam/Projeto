@@ -10,20 +10,19 @@
     <meta name="description" content="Gêneros músicas, estilos, bandas e artistas"/>
     <meta name="author" content="minor S.A"/>
     <meta name="keywords" content="músicas, tudo sobre bandas, características das músicas brasileiras"/>
-    <link rel="stylesheet" type="text/css" href="estilos/estilo_prin.css" />
+    <link rel="stylesheet" type="text/css" href="../estilos/estilo_prin.css" />
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 
 </head>
 
-<body id="add_gen">
+<body id="painel">
 
 	<div id="topo"> 
 
     <div id="top_conteudo">
 	    
-	    <p id="site_nome"><a href="index.php" ><span>música</span>brasil</a></p>
-	    <p id="cadastro"><a href="#">Cadastro</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Login</a></p>
-      <a href="painel.php" class="painel"><img src="imagens/painel.png" alt="engrenagens" title="Obs: Só será visivel ao ADMIN !"/></a>
+	    <p id="site_nome"><a href="../index.php" ><span>música</span>brasil</a></p>
+      <a href="painel.php" class="painel"><img src="../imagens/painel.png" alt="engrenagens" title="Obs: Só será visivel ao ADMIN !"/></a>
 
 	    <div id="divisao"> </div>
 
@@ -40,7 +39,6 @@
 		   <li><a href="#">Blablabla</a></li>
 		</ul>
 
-
 		
     </div > <!-- FIM DA DIV top_conteudo -->
 
@@ -48,38 +46,28 @@
 
 
 	<div id="conteudo">
-       <h1><a href="painel.php">Painel de Controle</a> > <a href="gerenciar-gen.php">Gerênciar Gêneros</a> > Adicionar Gênero</h1>
-       
+       <h1>Painel de Controle</h1>
+
 
        <div class="linha_conteudo"></div>
 
-       <br/><br/>
-       <form method="POST" action="add-genero.php">
-  
-           <fildset>
-  
-               <legend>Adicionar Gênero</legend> <br/><br/> <!-- BR's só para fins de visualição -->
+      <a href="gerenciar-gen.php"> <div class="opcao">Gerenciar Gêneros
+       </div></a>
 
-    
-               <label for="titulo">Título: </label><input type="text" name="titulo" id="titulo" /> <br/><br/>
-               <label for="imagem">Imagem: </label><input type="file" name="imagem" id="imagem" /> <br/><br/>
-               <label for="descricao">Descrição: </label> <textarea name="descricao" id="descricao"> </textarea> <br/><br/>
-               <input type="submit" name="enviar" value="ADICIONAR" />
-
-            </fildset>
-
-
-
-       </form>
-
-
-    <h1 style="font:30px; margin-left:350px">EM MANUTENÇÃO !</h1>
-
-       <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><!-- BR's só para fins de visualição -->
-       <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+       <a href="#"> <div class="opcao">Gerenciar SubGêneros
+       </div></a>
+       
+        <a href="#"> <div class="opcao">Gerenciar Usuários
+       </div></a> 
+ 
        
 
-       </div> <!-- FIM DA DIV conteudo -->
+
+    
+       
+ 
+
+     </div> <!-- FIM DA DIV conteudo -->
 
 
 

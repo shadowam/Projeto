@@ -296,7 +296,6 @@ div.opcao {
    color:#000;
    padding-top:30px;
    text-align:center;
-
    }
 
 div.opcao:hover {
@@ -315,12 +314,9 @@ div.opcao a  {
 
    }
 
-
 /* <-- PAINEL DE CONTROLE - PHP */
 
 /* GERENCIAR GÊNERO PHP */
-
-
 
 body#gerencia_gen #conteudo .bloco-gerencia   {
     position:relative;
@@ -354,4 +350,62 @@ body#gerencia_gen #conteudo p#add img{
      width:40px;
      height:40px;
   }
+
+/* FIM GERENCIAR GÊNERO PHP */
+
+/* ADICIONAR GÊNERO PHP */
+
+#login_table{
+  height: 200px;
+  margin: 0 auto;
+  border: none;
+  margin-top: 50px;
+}
+
+#login_table textarea {
+  margin-bottom: 10px;
+  height: 100px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  background-color: #EEE;
+  padding: 4px;
+}
+
+.textotd {
+   margin: 6px 5px 10px 15px;
+   background: #fff;
+   float:left;
+   font: 19px 'Droid Sans', sans-serif ;
+   color:#000;
+}
+
+.botao{
+  display:block;
+  margin: 0 auto;
+  cursor: pointer;
+  font: bold 18px Calibri;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+.txt{
+  height: 35px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  background-color: #EEE;
+  padding: 4px;
+  margin-bottom: 5px;
+}
+
+.txt:hover{
+  background-color: #CCC;
+}
 
