@@ -46,7 +46,7 @@
           <table id="cad_table">
             <tr>
               <td>Nome:</td>
-              <td><input type="text" name="user_nome" id="user_nome" class="txt" placeholder="Digite seu nome completo." required pattern="[a-zA-Z. -]+"></td>
+              <td><input type="text" name="user_nome" id="user_nome" class="txt" maxlength="35" placeholder="Digite seu nome completo." required pattern="[a-zA-Z. -]+"></td>
             </tr>
             <tr>
               <td>Email:</td>
