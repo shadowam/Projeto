@@ -4,24 +4,6 @@
   require_once "sistema/conexoes.php"; // requerindo as variáveis do config.php
   require_once "sistema/funcoes.php"; // requerindo as funções do config.php
 
-  if (isset($_POST['Cadastrar'])){ // se existir o clique no botão Cadastrar.
-
-    // Criando Um Array($cadastro) para ser utilizado na função GravaRegistro().
-    $cadastro['user_nome'] = Limpa(strip_tags(trim($_POST['user_nome']))); //Tira as tags html(strip_tags), tira os longos espaços(trim) => da variável
-    $cadastro['user_email'] = Limpa(strip_tags(trim($_POST['user_email']))); //Tira as tags html(strip_tags), tira os longos espaços(trim) => da variável
-    $cadastro['user_login'] = Limpa(strip_tags(trim($_POST['user_login']))); //Tira as tags html(strip_tags), tira os longos espaços(trim) => da variável 
-    $cadastro['user_pw'] = Limpa(strip_tags(trim($_POST['user_pw']))); //Tira as tags html(strip_tags), tira os longos espaços(trim) => da variável 
-
-    $result = GravaRegistro('user', $cadastro); // <= envio como referência para a função GravaRegistro, os parâmetros 'user' que é o nome da tabela que eu quero gravar e o array ($cadastro) que será gravado.
-                                                // Dessa forma a função GravaRegistro vai trabalhar com as referencias de acordo com as instruções que estão nela. 
-
-    // OBS: POSTERIORMENTE CABE IMPLEMENTAR UMA FUNÇÃO QUE VERIFICA SE O CADASTRO JÁ EXISTE. (SELECT ...)
-
-    if($result)
-      echo "<script>alert('Cadastro efetuado com sucesso.\\nPor favor efetue o login.');window.location.replace('entrar.php')</script>";
-      //header("location: generos.php "); // Após o cadastro, a página redireciona o usuário à página generos.php, isso futuramente será modificado colocando instruções para criar sessões ...
-  }
-
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -43,10 +25,11 @@
   <body>
   	<div id="topo"> 
       <div id="top_conteudo">
-        <!-- <form method="POST" action="sistema/login.php">
-          <input type="submit" name="enviar" value="Já é cadastrado?" />
-        </form> -->
-        <span class="botao"><a href="entrar.php">Já é cadastrado?</a></span></td>
+        <form method="POST" action="sistema/login.php">
+          <label for="login1">Login</label><input type="text" name="login1" id="login1" />
+          <label for="senha1">Senha</label><input type="password" name="senha1" id="senha1" />
+          <input type="submit" name="enviar" value="ENTRAR" />
+        </form>
   	    <p id="site_nome"><a href="index.php" ><span>música</span>brasil</a></p>
 
   	    <div id="divisao"> </div>  		
@@ -59,7 +42,7 @@
       <div id="cadastro">
         <h1>Abra uma conta</h1> 
         <h3>É gratuito e sempre será.</h3> 
-        <form method="post" action="index.php">
+        <form method="post" action="sistema/cadastrar.php">
           <table id="cad_table">
             <tr>
               <td>Nome:</td>

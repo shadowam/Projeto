@@ -58,37 +58,60 @@ p#site_nome a {
    left:0;
   }   
 
-#top_conteudo .botao {
-  position:absolute;
-  right:0;
-  top:43px;
-  cursor: pointer;
-  font: bold 18px Calibri;
-  text-decoration: none;
-  background-color: #EEEEEE;
-  color: #333333;
-  padding: 2px 6px 2px 6px;
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;
-}
 
-#top_conteudo .botao a:link, .botao a:visited {
-  /* remove the offening underline */
-  text-decoration: none;
-  color: #333333;
-}
+#top_conteudo form {
+   width:500px;
+   height:90px;
+   position:absolute;
+   right:0;
+   }
 
-#top_conteudo span button{
+#top_conteudo form input[id=login1] {
+   position:absolute;
+   width:180px;
+   height:25px;
+   position:absolute;
+   right:235px;
+   top:43px;
+   font: 15px 'Droid Sans', sans-serif;
+   }
+
+#top_conteudo form input[id=senha1] {
+   position:absolute;
+   right:70px;
+   top:43px;
+   width:150px;
+   height:25px;
+   font: 15px 'Droid Sans', sans-serif;
+   }
+
+#top_conteudo form input[name=enviar] {
    position:absolute;
    right:0;
    top:43px;
-   width:160px;
+   width:60px;
    height:29px;
    cursor:pointer;
-   font: 17px 'Droid Sans', sans-serif;
-}
+   font-family:'Droid Sans', sans-serif;
+   }
+
+#top_conteudo form label[for=login1] {
+   cursor:pointer;
+   position:absolute;
+   right:380px;
+   top:23px;
+   color:#fff;  
+   font-family:'Droid Sans', sans-serif;
+    }
+
+#top_conteudo form label[for=senha1] {
+   cursor:pointer;
+   position:absolute;
+   right:180px;
+   top:23px;
+   color:#fff;  
+   font-family:'Droid Sans', sans-serif;
+   }
 
 /* CONTEÚDO DA PÁGINA */
 
