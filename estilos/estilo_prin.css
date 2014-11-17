@@ -1,141 +1,142 @@
 * {
-   margin:0; 
-   padding:0;
-  }
+  margin:0; 
+  padding:0;
+}
 
 body {
-   background:#f0f0f0;
-   }
+  background:#f0f0f0;
+}
 
 
 /* TOPO DA PÁGINA */   
 
 #topo {
-   width:100%;
-   height:90px;
-   background:#151515;
-   }
+  width:100%;
+  height:90px;
+  background:#151515;
+}
 
 #top_conteudo {
-   position:relative;
-   margin:0 auto;
-   width:978px;
-   height:100%;
-   background:#151515;
-   }
+  position:relative;
+  margin:0 auto;
+  width:978px;
+  height:100%;
+  background:#151515;
+}
 
 #top_conteudo #site_nome  {
-   color:#fff;
-   position:absolute;
-   text-transform:uppercase;
-   font: 40px 'Droid Sans', sans-serif;
-   top:8px;
-   }  
+  color:#fff;
+  position:absolute;
+  text-transform:uppercase;
+  font: 40px 'Droid Sans', sans-serif;
+  top:8px;
+}  
 
 #top_conteudo #site_nome span {
-   text-transform:uppercase;
-   color:#21A8DF;
-   font: 40px 'Droid Sans', sans-serif;
-   padding-right:4px;
-   }
+  text-transform:uppercase;
+  color:#21A8DF;
+  font: 40px 'Droid Sans', sans-serif;
+  padding-right:4px;
+}
 
 p#site_nome a {
-   text-decoration:none;
-   color:#fff;
-   }
+  text-decoration:none;
+  color:#fff;
+}
 
 #top_conteudo .painel img{
-   position:absolute;
-   width:30px;
-   height:30px;
-   right:15px;
-   top:15px; 
-   }
+  position:absolute;
+  width:30px;
+  height:30px;
+  right:15px;
+  top:15px; 
+}
 
 
 
 #divisao {
-   position:absolute;
-   top:54px;
-   width:100%;
-   height:1px;
-   border-top:1px inset #DCDCDC;
-   }  
+  position:absolute;
+  top:54px;
+  width:100%;
+  height:1px;
+  border-top:1px inset #DCDCDC;
+}  
 
 #top_conteudo #nave {
-   position:absolute;
-   bottom:0;
-   left:0;
-  }   
+  position:absolute;
+  bottom:0;
+  margin-left: -10px;
+}   
 
 #top_conteudo #nave li {
-   display:inline;
-   }
+  padding-left: 8px;
+  display:inline;
+}
 
 #top_conteudo #nave li a {
-   color:#fff;
-   display:inline-block;
-   padding:3px;
-   margin-bottom:3px;
-   font: 20px 'Droid Sans', sans-serif;
-   text-decoration:none;
-   }
+  color:#fff;
+  display:inline-block;
+  padding:3px;
+  margin-bottom:3px;
+  font: 20px 'Droid Sans', sans-serif;
+  text-decoration:none;
+}
 
 #top_conteudo #nave li a:hover {
-   text-decoration:none;
-   padding:3px;
-   color:#21A8DF;
-   }
+  text-decoration:none;
+  padding:3px;
+  color:#21A8DF;
+}
 
 #top_conteudo .bemvindo {
-   color:#fff;
-   position:absolute;
-   right:10px;
-   bottom:8px;
-   font: 15px 'Droid Sans', sans-serif;
-   text-decoration: none;
-   }
+  color:#fff;
+  position:absolute;
+  right:10px;
+  bottom:8px;
+  font: 15px 'Droid Sans', sans-serif;
+  text-decoration: none;
+}
 #top_conteudo .sair {
-   color:#fff;
-   display:inline-block;
-   font: 20px 'Droid Sans', sans-serif;
-   padding-left: 45px;
-   text-decoration:none;
+  color:#fff;
+  display:inline-block;
+  font: 20px 'Droid Sans', sans-serif;
+  padding-left: 45px;
+  text-decoration:none;
 }
 
 #top_conteudo .bemvindo a:hover {
-   text-decoration:none;
-   color:#21A8DF;
+  text-decoration:none;
+  color:#21A8DF;
 }
 
 #top_conteudo form {
-   position:absolute;
-   right:0;
-   top:15px;
-   }
+  position:absolute;
+  right:0;
+  top:15px;
+}
 
 
 
 /* CONTEÚDO DA PÁGINA */
 
 #conteudo {
-   position: relative;
-   overflow: auto;
-   margin:10px auto;
-   width:978px;
-   background:#fff;  
-   border-radius:3px;
-   border: 1px solid #DCDCDC;
-   padding-bottom:40px;
-   }
+  position: relative;
+  overflow: auto;
+  margin:10px auto;
+  width:978px;
+  background:#fff;  
+  border-radius:3px;
+  border: 1px solid #DCDCDC;
+  padding-bottom:40px;
+}
 
 #conteudo h1 {
-   float:left;
-   font: 36px ;
-   margin:25px 15px 0 17px;
-   font-weight: 500;
-   font-family: 'Droid Sans', sans-serif;;
-   }
+  float:left;
+  font: 36px ;
+  margin:25px 15px 0 17px;
+  font-weight: 500;
+  font-family: 'Droid Sans', sans-serif;;
+}
 
 #conteudo h1 a {
   text-decoration:none;
@@ -148,20 +149,20 @@ p#site_nome a {
 }
 
 #conteudo:after {
-   content:".";
-   display:block;
-   height:0;
-   clear:both;
-   visibility:hidden;
-   }
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
 
 #conteudo .linha_conteudo {
-   clear:both;
-   height:1px;
-   width:951.5px;
-   border-bottom:1px solid #DCDCDC;
-   margin-left:13px;
-   }
+  clear:both;
+  height:1px;
+  width:951.5px;
+  border-bottom:1px solid #DCDCDC;
+  margin-left:13px;
+}
 
 
 /*CONTEUDO BLOCO ESQUERDO --> */
@@ -182,52 +183,52 @@ p#site_nome a {
   font: 15px 'Droid Sans', sans-serif ;
 }
 
- /* <-- CONTEUDO BLOCO ESQUERDO */  
+/* <-- CONTEUDO BLOCO ESQUERDO */  
 
 
- /*CONTEUDO BLOCO CENTRAL --> */
+/*CONTEUDO BLOCO CENTRAL --> */
 #conteudo .bloco-central img {
-   margin-top:15px;
-   margin-left:12px;
-   width:300px; 
-   height:150px;
-   }
+  margin-top:15px;
+  margin-left:12px;
+  width:300px; 
+  height:150px;
+}
 
 #conteudo .bloco-central .titulo {
-   color:#21A8DF ;
-   margin-left:9px;
-   font: 20px 'Droid Sans', sans-serif ;
-   padding:3px 0 6px 2px;
-   }
+  color:#21A8DF ;
+  margin-left:9px;
+  font: 20px 'Droid Sans', sans-serif ;
+  padding:3px 0 6px 2px;
+}
 
 #conteudo .bloco-central .descri {
-   margin-left:12px;
-   font: 15px 'Droid Sans', sans-serif ;
-   }
+  margin-left:12px;
+  font: 15px 'Droid Sans', sans-serif ;
+}
 
- /* <-- CONTEUDO BLOCO CENTRAL */ 
+/* <-- CONTEUDO BLOCO CENTRAL */ 
 
- /*CONTEUDO BLOCO DIREITO --> */
+/*CONTEUDO BLOCO DIREITO --> */
 #conteudo .bloco-direito img {
-   margin-top:15px;
-   margin-left:12.8px;
-   width:300px; 
-   height:150px;
-   }
+  margin-top:15px;
+  margin-left:12.8px;
+  width:300px; 
+  height:150px;
+}
 
 #conteudo .bloco-direito .titulo {
-   color:#21A8DF ;
-   font: 20px 'Droid Sans', sans-serif ;
-   padding:3px 0 6px 2px;
-   margin-left:10px;
-   }
+  color:#21A8DF ;
+  font: 20px 'Droid Sans', sans-serif ;
+  padding:3px 0 6px 2px;
+  margin-left:10px;
+}
 
 #conteudo .bloco-direito .descri {
-   font: 15px 'Droid Sans', sans-serif ;
-   margin-left:12.8px;
-   }
+  font: 15px 'Droid Sans', sans-serif ;
+  margin-left:12.8px;
+}
 
- /* <-- CONTEUDO BLOCO DIREITO */ 
+/* <-- CONTEUDO BLOCO DIREITO */ 
 
 #conteudo .bloco-esquerdo {
   margin-left: 14px;
@@ -238,11 +239,11 @@ p#site_nome a {
 }
 
 #conteudo .bloco-central {
-   float:left;
-   border:1px solid #DCDCDC;
-   width:324.5px;
-   height:230px;
-   border-top:0;
+  float:left;
+  border:1px solid #DCDCDC;
+  width:324.5px;
+  height:230px;
+  border-top:0;
 }
 
 #conteudo .bloco-direito {
@@ -253,10 +254,10 @@ p#site_nome a {
 }
 
 #conteudo .sub a {
-   color:#21A8DF;
-   margin-left:8px;
-   font: 20px 'Droid Sans', sans-serif ;
-   padding:3px 0 6px 2px;
+  color:#21A8DF;
+  margin-left:8px;
+  font: 20px 'Droid Sans', sans-serif ;
+  padding:3px 0 6px 2px;
 }
 
 #conteudo .sub a:hover, a:visited, a:link, a:active {
@@ -282,107 +283,107 @@ p#site_nome a {
 }
 
 .active {
-    background: #21A8DF;
-    color: white;
+  background: #21A8DF;
+  color: white;
 }
 
 
 .texto{
   text-align: justify;
-   color: #000;
-   margin: 10px 20px 12px 20px;
-   font: 16px 'Droid Sans', sans-serif;
+  color: #000;
+  margin: 10px 20px 12px 20px;
+  font: 16px 'Droid Sans', sans-serif;
 }
 
 
 /* RODAPÉ DA PÁGINA */   
 #rodape {
-   width:100%;
-   height:100px;
-   background:#000;
-   }
+  width:100%;
+  height:100px;
+  background:#000;
+}
 
 #conteudo_rodape {
-   padding-top:12px;
-   color:#fff;
-   width:980px;
-   margin: 0 auto;
+  padding-top:12px;
+  color:#fff;
+  width:980px;
+  margin: 0 auto;
 }
 
 #conteudo_rodape p {
-   font-family:'Droid Sans', sans-serif ;
-   }
+  font-family:'Droid Sans', sans-serif ;
+}
 
 
 /* PAINEL DE CONTROLE - PHP --> */
 #painel .linha_conteudo {
-   margin-bottom:15px;
-   }
+  margin-bottom:15px;
+}
 
 #painel #conteudo {
   height:750px;
-   }
+}
 
 div.opcao {
-   margin:10px 0 0 15px;
-   width:210px;
-   height:51px;
-   background: #fff url(../imagens/opcao.png);
-   float:left;
-   font: 19px 'Droid Sans', sans-serif ;
-   color:#000;
-   padding-top:30px;
-   text-align:center;
+  margin:10px 0 0 15px;
+  width:210px;
+  height:51px;
+  background: #fff url(../imagens/opcao.png);
+  float:left;
+  font: 19px 'Droid Sans', sans-serif ;
+  color:#000;
+  padding-top:30px;
+  text-align:center;
 
-   }
+}
 
 div.opcao:hover {
-   margin:10px 0 0 15px;
-   width:210px;
-   height:51px;
-   background: #fff url(../imagens/opcao_hover.png);
-   float:left;
-   color:#000;
-   }
+  margin:10px 0 0 15px;
+  width:210px;
+  height:51px;
+  background: #fff url(../imagens/opcao_hover.png);
+  float:left;
+  color:#000;
+}
 
 div.opcao a  {
-   width:150px;
-   height:150px;
-   text-decoration:none;
-   }
+  width:150px;
+  height:150px;
+  text-decoration:none;
+}
 /* <-- PAINEL DE CONTROLE - PHP */
 
 
 /* GERENCIAR GÊNERO PHP */
 #gerencia_gen #conteudo .bloco-gerencia   {
-    position:relative;
-  }
+  position:relative;
+}
 
 #gerencia_gen #conteudo  p.descri {
-    position:absolute;
-    right:16px;
-    bottom:15px;
-    color:#000;
-  }
+  position:absolute;
+  right:16px;
+  bottom:15px;
+  color:#000;
+}
 
 #gerencia_gen #conteudo  p.descri a {
-     color:#000;
-  }
+  color:#000;
+}
 
 
 #gerencia_gen #conteudo #add{
-     float:right;
-     font:40px 'Droid Sans', sans-serif  ;
-     margin-top:20px;
-     margin-right:15px;
-     color:#000;
-     }
+  float:right;
+  font:40px 'Droid Sans', sans-serif  ;
+  margin-top:20px;
+  margin-right:15px;
+  color:#000;
+}
 
 
 #gerencia_gen #conteudo #add img{
-     margin-top:2px;
-     float:left;
-     display:block;
-     width:40px;
-     height:40px;
-  }
+  margin-top:2px;
+  float:left;
+  display:block;
+  width:40px;
+  height:40px;
+}
