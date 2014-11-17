@@ -54,8 +54,6 @@ p#site_nome a {
 
 
 
-
-
 div#divisao {
    position:absolute;
    top:54px;
@@ -121,6 +119,8 @@ div#divisao {
 /* CONTEÚDO DA PÁGINA */
 
 div#conteudo {
+   position: relative;
+   overflow: auto;
    margin:10px auto;
    width:978px;
    background:#fff;  
@@ -160,7 +160,7 @@ div#conteudo:after {
 #conteudo .linha_conteudo {
    clear:both;
    height:1px;
-   width:948px;
+   width:951.5px;
    border-bottom:1px solid #DCDCDC;
    margin-left:13px;
    }
@@ -168,20 +168,21 @@ div#conteudo:after {
 
 /*CONTEUDO BLOCO ESQUERDO --> */
 #conteudo .bloco-esquerdo img {
-   margin-top:15px;
-   width:300px; 
-   height:150px;
-   }
+  margin-top:15px;
+  width:300px; 
+  height:150px;
+}
 
 #conteudo .bloco-esquerdo .titulo {
-   color:#21A8DF ;
-   font: 20px 'Droid Sans', sans-serif ;
-   padding:3px 0 6px 2px;
-   }
+  color:#21A8DF ;
+  font: 20px 'Droid Sans', sans-serif ;
+  padding:3px 0 6px 2px;
+  margin-left: -2px;
+}
 
 #conteudo .bloco-esquerdo .descri {
-   font: 15px 'Droid Sans', sans-serif ;
-   }
+  font: 15px 'Droid Sans', sans-serif ;
+}
 
  /* <-- CONTEUDO BLOCO ESQUERDO */  
 
@@ -189,20 +190,20 @@ div#conteudo:after {
  /*CONTEUDO BLOCO CENTRAL --> */
 #conteudo .bloco-central img {
    margin-top:15px;
-   margin-left:8px;
+   margin-left:12px;
    width:300px; 
    height:150px;
    }
 
 #conteudo .bloco-central .titulo {
    color:#21A8DF ;
-   margin-left:8px;
+   margin-left:9px;
    font: 20px 'Droid Sans', sans-serif ;
    padding:3px 0 6px 2px;
    }
 
 #conteudo .bloco-central .descri {
-   margin-left:8px;
+   margin-left:12px;
    font: 15px 'Droid Sans', sans-serif ;
    }
 
@@ -211,7 +212,7 @@ div#conteudo:after {
  /*CONTEUDO BLOCO DIREITO --> */
 #conteudo .bloco-direito img {
    margin-top:15px;
-   margin-left:15px;
+   margin-left:12.8px;
    width:300px; 
    height:150px;
    }
@@ -220,45 +221,84 @@ div#conteudo:after {
    color:#21A8DF ;
    font: 20px 'Droid Sans', sans-serif ;
    padding:3px 0 6px 2px;
-   margin-left:15px;
+   margin-left:10px;
    }
 
 #conteudo .bloco-direito .descri {
    font: 15px 'Droid Sans', sans-serif ;
-   margin-left:15px;
+   margin-left:12.8px;
    }
 
  /* <-- CONTEUDO BLOCO DIREITO */ 
 
 #conteudo .bloco-esquerdo {
-   float:left;
-   margin-left:13px;
-   border:1px solid #DCDCDC;
-   border-left:0;
-   border-top:0;
-   width:316px;
-   height:230px;
-   }
+  margin-left: 14px;
+  float:left;
+  border-bottom:1px solid #DCDCDC;
+  width:312.5px;
+  height:230px;
+}
 
 #conteudo .bloco-central {
    float:left;
    border:1px solid #DCDCDC;
-   border-left:0;
-   width:316px;
+   width:324.5px;
    height:230px;
    border-top:0;
-   }
+}
 
 #conteudo .bloco-direito {
-   float:left;
-   border-bottom:1px solid #DCDCDC;
-    width:316px;
-   height:230px;
-   }
+  float:left;
+  border-bottom:1px solid #DCDCDC;
+  width:313px;
+  height:230px;
+}
+
+#conteudo .sub a {
+   color:#21A8DF;
+   margin-left:8px;
+   font: 20px 'Droid Sans', sans-serif ;
+   padding:3px 0 6px 2px;
+}
+
+#conteudo .sub a:hover, a:visited, a:link, a:active {
+  /* remove the offening underline */
+  text-decoration: none;
+  color: #21A8DF;
+}
+
+.titulotxt {
+  cursor:pointer;
+  color:#21A8DF;
+  margin-left:8px;
+  margin-bottom: 5px;
+  font: 20px 'Droid Sans', sans-serif ;
+  padding:3px 0 6px 15px;
+  border: 1px solid #21A8DF;
+  border-radius: 25px;
+}
+
+.titulotxt:hover,
+.titulotxt:active {
+  background: #21A8DF;
+  color: white;
+}
+
+.active {
+    background: #21A8DF;
+    color: white;
+}
+
+
+.texto{
+   color: #000;
+   margin-left:15px;
+   font: 16px 'Droid Sans', sans-serif ;
+   padding:3px 0 15px 2px;
+}
 
 
 /* RODAPÉ DA PÁGINA */   
-
 div#rodape {
    width:100%;
    height:100px;
@@ -276,8 +316,8 @@ div#conteudo_rodape p {
    font-family:'Droid Sans', sans-serif ;
    }
 
-/* PAINEL DE CONTROLE - PHP --> */
 
+/* PAINEL DE CONTROLE - PHP --> */
 body#painel .linha_conteudo {
    margin-bottom:15px;
    }
@@ -312,16 +352,11 @@ div.opcao a  {
    width:150px;
    height:150px;
    text-decoration:none;
-
    }
-
-
 /* <-- PAINEL DE CONTROLE - PHP */
 
+
 /* GERENCIAR GÊNERO PHP */
-
-
-
 body#gerencia_gen #conteudo .bloco-gerencia   {
     position:relative;
   }
@@ -354,4 +389,3 @@ body#gerencia_gen #conteudo p#add img{
      width:40px;
      height:40px;
   }
-

@@ -1,8 +1,8 @@
 <?php
 
-	require_once "sistema/config.php"; // requerindo as variáveis do config.php
-	require_once "sistema/conexoes.php"; // requerindo as variáveis do config.php
-	require_once "sistema/funcoes.php"; // requerindo as funções do config.php
+	require_once "config.php"; // requerindo as variáveis do config.php
+	require_once "conexoes.php"; // requerindo as variáveis do config.php
+	require_once "funcoes.php"; // requerindo as funções do config.php
 
 	session_start();// Inicia a sessão
 
@@ -21,7 +21,7 @@
 	// Se uma sessão não estiver ativa, fecha a conexão com o banco e volta para a página inicial
 	if(!isset($login_session)){
 		FechaBanco($link); // Closing Connection
-		header('Location: index.php'); // Redirecting To Home Page
+		header('Location: ../'); // Redirecting To Home Page
 	}
 
 ?>
