@@ -47,17 +47,23 @@
       <div class="linha_conteudo"></div>
       <!-- INÍCIO DO PRIMEIRO BLOCO  -->
       <div class="bloco-esquerdo">
-        <img src="imagens/classic.jpg" alt="Clássica" title="Clássica" />
+      	<a href="generos/classica.php">
+        	<img src="imagens/classic.jpg" alt="Clássica" title="Clássica" />
+    	</a>
         <p class="titulo"><a id="sub" href="generos/classica.php">Clássica</a></p>
         <p class="descri">Ópera, Sinfonia,  Sonata</p>
       </div>
       <div class="bloco-central">
-        <img src="imagens/Electro-Music.png" alt="Música Eletrônica" title="Música Eletrônica" />
+      	<a href="generos/eletro.php">
+        	<img src="imagens/Electro-Music.png" alt="Música Eletrônica" title="Música Eletrônica" />
+    	</a>	
         <p class="titulo"><a id="sub" href="generos/eletro.php">Eletrônica</a></p>
         <p class="descri">Trance, DubStep, FreeStep</p>
       </div>
         <div class="bloco-direito">
-        <img src="imagens/rock.jpg" alt="Rock" title="Rock" />
+        <a href="generos/rock.php">
+        	<img src="imagens/rock.jpg" alt="Rock" title="Rock" />
+    	</a>
         <p class="titulo"><a id="sub" href="generos/rock.php">Rock</a></p>
         <p class="descri">Rock and Roll, Metal , Psicodélico</p>
       </div> 
@@ -65,17 +71,23 @@
 
       <!-- INÍCIO DO SEGUNDO BLOCO  -->
       <div class="bloco-esquerdo">
-        <img src="imagens/rap-music.jpg" alt="Rap" title="Rap" />
+      	<a href="generos/rap.php">
+        	<img src="imagens/rap-music.jpg" alt="Rap" title="Rap" />
+        </a>
         <p class="titulo"><a id="sub" href="generos/rap.php">Rap</a></p>
         <p class="descri">Hip Hop, Rap Romântico, Gangsta Rap</p>
       </div>
       <div class="bloco-central">
-        <img src="imagens/pop-music.jpg" alt="Pop" title="Pop" />
+      	<a href="generos/pop.php">
+        	<img src="imagens/pop-music.jpg" alt="Pop" title="Pop" />
+        </a>
         <p class="titulo"><a id="sub" href="generos/pop.php">Pop</a></p>
         <p class="descri">Dance-pop‎, K-pop‎,  J-pop‎</p>
       </div>
         <div class="bloco-direito">
-        <img src="imagens/gospel.jpg" alt="Gospel" title="Gospel" />
+        <a href="generos/gospel.php">
+        	<img src="imagens/gospel.jpg" alt="Gospel" title="Gospel" />
+        </a>
         <p class="titulo"><a id="sub" href="generos/gospel.php">Gospel</a></p>
         <p class="descri">Hinos Cristãos</p>
       </div> 
@@ -83,17 +95,23 @@
 
       <!-- INÍCIO DO TERCEIRO BLOCO  -->
       <div class="bloco-esquerdo">
-        <img src="imagens/reggae.jpg" alt="Reggae" title="Reggae" />
+      	<a href="generos/reggae.php">
+        	<img src="imagens/reggae.jpg" alt="Reggae" title="Reggae" />
+        </a>
         <p class="titulo"><a id="sub" href="generos/reggae.php">Reggae</a></p>
         <p class="descri">Dancehall, Dub, Ragga</p>
       </div>
       <div class="bloco-central">
-        <img src="imagens/jazz.jpg" alt="Jazz" title="Jazz" />
+      	<a href="generos/jazz.php">
+        	<img src="imagens/jazz.jpg" alt="Jazz" title="Jazz" />
+        </a>
         <p class="titulo"><a id="sub" href="generos/jazz.php">&nbsp;Jazz</a></p>
         <p class="descri">Nu-Jazz, Punk Jazz, Soul Jazz</p>
       </div>
       <div class="bloco-direito">
-        <img src="imagens/funk.jpg" alt="Funk" title="Funk"/>
+      	<a href="generos/funk.php">
+        	<img src="imagens/funk.jpg" alt="Funk" title="Funk"/>
+        </a>
         <p class="titulo"><a id="sub" href="generos/funk.php">Funk</a></p>
         <p class="descri">Disco Music, Post-punk, Drum and Bass</p>
       </div> 

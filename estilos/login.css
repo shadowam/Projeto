@@ -10,13 +10,13 @@ body {
 
 /* TOPO DA PÁGINA */   
 
-div#topo {
+#topo {
    width:100%;
    height:90px;
    background:#151515;
    }
 
-div#top_conteudo {
+#top_conteudo {
    position:relative;
    margin:0 auto;
    width:978px;

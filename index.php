@@ -31,8 +31,6 @@
           <input type="submit" name="enviar" value="ENTRAR" />
         </form>
   	    <p id="site_nome"><a href="index.php" ><span>música</span>brasil</a></p>
-
-  	    <div id="divisao"> </div>  		
       </div> <!-- FIM DA DIV top_conteudo -->
     </div> <!-- FIM DA DIV topo -->
 
