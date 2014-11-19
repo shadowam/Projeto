@@ -65,7 +65,7 @@
 
         <ul id="nave">
           <li><a href="#">Home</a></li>
-          <li><a href="generos2.php">Gêneros</a></li>
+          <li><a href="generos.php">Gêneros</a></li>
           <li><a href="#">Novidades</a></li>
           <li><a href="#">Minha Conta</a></li>
           <li><a href="#">Blablabla</a></li>
