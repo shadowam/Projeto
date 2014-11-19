@@ -1,6 +1,5 @@
 <?php
 
-  require_once "../sistema/config.php"; // requerindo as variáveis do config.php
   require_once "../sistema/conexoes.php"; // requerindo as variáveis do conexoes.php
   require_once "../sistema/funcoes.php"; // requerindo as funções do funcoes.php
 
@@ -20,6 +19,7 @@
     <meta name="keywords" content="músicas, tudo sobre bandas, características das músicas brasileiras"/>
     <link rel="stylesheet" type="text/css" href="../estilos/estilo_prin.css" />
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' />
+    <link rel="icon" type="image/png" href="imagens/favicon.ico" />
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <script>

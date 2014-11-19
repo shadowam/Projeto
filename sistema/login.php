@@ -1,6 +1,5 @@
 <?php
-    
-  require_once "config.php"; // requerindo as variáveis do config.php
+
   require_once "conexoes.php"; // requerindo as variáveis do config.php
   require_once "funcoes.php"; // requerindo as funções do config.php
 
@@ -14,7 +13,7 @@
           AND user_pw = '$senha'";
 
   //Efetua uma query no banco usando a variável $sel. Em caso de erro a mensagem é informada na tela
-  $result = mysqli_query($link, $sel) or die ("Erro na seleção da tabela.");
+  $result = mysqli_query($mysql, $sel) or die ("Erro na seleção da tabela.");
 
   //Caso consiga logar, cria a sessão
   if (mysqli_num_rows ($result) == 1) {

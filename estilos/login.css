@@ -266,12 +266,21 @@ body{
   border: 1px solid #CCC;
 }
 
-#login_table{
+.login_table{
   height: 200px;
   margin: 0 auto;
   padding: 10px;
   border: none;
   margin-top: 250px;
+}
+
+.login_table input {
+  height: 35px;
+  width: 350px;
+  border: none;
+  border-radius: 5px;
+  background-color: #EEE;
+  padding: 4px;
 }
 
 /*Código para apagar o texto placeholder ao clicar no campo (chrome e firefox)*/

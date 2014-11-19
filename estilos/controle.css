@@ -1,398 +1,279 @@
 * {
-   margin:0; 
-   padding:0;
-  }
+  margin:0; 
+  padding:0;
+}
 
 body {
-   background:#f0f0f0;
-   }
-
+  background:#f0f0f0;
+}
 
 /* TOPO DA PÁGINA */   
-
 div#topo {
-   width:100%;
-   height:90px;
-   background:#151515;
-   }
+  width:100%;
+  height:90px;
+  background:#151515;
+}
 
 div#top_conteudo {
-   position:relative;
-   margin:0 auto;
-   width:978px;
-   height:100%;
-   background:#151515;
-   }
+  position:relative;
+  margin:0 auto;
+  width:978px;
+  height:100%;
+  background:#151515;
+}
 
 #top_conteudo p#site_nome  {
-   color:#fff;
-   position:absolute;
-   text-transform:uppercase;
-   font: 40px 'Droid Sans', sans-serif;
-   top:8px;
-   }  
+  color:#fff;
+  position:absolute;
+  text-transform:uppercase;
+  font: 40px 'Droid Sans', sans-serif;
+  top:8px;
+}  
 
 #top_conteudo p#site_nome span {
-   text-transform:uppercase;
-   color:#21A8DF;
-   font: 40px 'Droid Sans', sans-serif;
-   padding-right:4px;
-   }
+  text-transform:uppercase;
+  color:#21A8DF;
+  font: 40px 'Droid Sans', sans-serif;
+  padding-right:4px;
+}
 
 p#site_nome a {
-   text-decoration:none;
-   color:#fff;
-   }
+  text-decoration:none;
+  color:#fff;
+}
 
 #top_conteudo a.painel img{
-   position:absolute;
-   width:30px;
-   height:30px;
-   right:15px;
-   top:15px; 
-   }
-
-
-
-
+  position:absolute;
+  width:30px;
+  height:30px;
+  right:15px;
+  top:15px; 
+}
 
 div#divisao {
-   position:absolute;
-   top:54px;
-   width:100%;
-   height:1px;
-   border-top:1px inset #DCDCDC;
-   }  
+  position:absolute;
+  top:54px;
+  width:100%;
+  height:1px;
+  border-top:1px inset #DCDCDC;
+}  
 
 #top_conteudo ul#nave {
-   position:absolute;
-   bottom:0;
-   left:0;
-  }   
+  position:absolute;
+  bottom:0;
+  left:0;
+}   
 
 #top_conteudo ul#nave li {
-   display:inline;
-   }
+  display:inline;
+}
 
 #top_conteudo ul#nave li a {
-   color:#fff;
-   display:inline-block;
-   padding:3px;
-   margin-bottom:3px;
-   font: 20px 'Droid Sans', sans-serif;
-   text-decoration:none;
-   }
+  color:#fff;
+  display:inline-block;
+  padding:3px;
+  margin-bottom:3px;
+  font: 20px 'Droid Sans', sans-serif;
+  text-decoration:none;
+}
 
 #top_conteudo ul#nave li a:hover {
-   text-decoration:none;
-   padding:3px;
-   color:#21A8DF;
-   }
+  text-decoration:none;
+  padding:3px;
+  color:#21A8DF;
+}
 
 #top_conteudo .bemvindo {
-   color:#fff;
-   position:absolute;
-   right:10px;
-   bottom:8px;
-   font: 15px 'Droid Sans', sans-serif;
-   text-decoration: none;
-   }
+  color:#fff;
+  position:absolute;
+  right:10px;
+  bottom:8px;
+  font: 15px 'Droid Sans', sans-serif;
+  text-decoration: none;
+}
+
 #top_conteudo .sair {
-   color:#fff;
-   display:inline-block;
-   font: 20px 'Droid Sans', sans-serif;
-   padding-left: 45px;
-   text-decoration:none;
+  color:#fff;
+  display:inline-block;
+  font: 20px 'Droid Sans', sans-serif;
+  padding-left: 45px;
+  text-decoration:none;
 }
 
 #top_conteudo .bemvindo a:hover {
-   text-decoration:none;
-   color:#21A8DF;
+  text-decoration:none;
+  color:#21A8DF;
 }
 
 #top_conteudo form {
-   position:absolute;
-   right:0;
-   top:15px;
-   }
-
+  position:absolute;
+  right:0;
+  top:15px;
+}
+/* FIM TOPO DA PÁGINA */
 
 
 /* CONTEÚDO DA PÁGINA */
-
 div#conteudo {
-   margin:10px auto;
-   width:978px;
-   background:#fff;  
-   border-radius:3px;
-   border: 1px solid #DCDCDC;
-   padding-bottom:40px;
-   }
+  margin:10px auto;
+  width:978px;
+  background:#fff;  
+  border-radius:3px;
+  border: 1px solid #DCDCDC;
+  padding-bottom:40px;
+}
 
 div#conteudo h1 {
-   float:left;
-   font: 36px ;
-   margin:25px 15px 0 17px;
-   font-weight: 500;
-   font-family: 'Droid Sans', sans-serif;;
-   }
+  float:left;
+  font: 36px ;
+  margin:25px 15px 0 17px;
+  font-weight: 500;
+  font-family: 'Droid Sans', sans-serif;;
+}
 
 div#conteudo h1 a {
   text-decoration:none;
   color:#21A8DF;
-
-   }
+}
 
 div#conteudo h1 a:hover {
   text-decoration:underline;
   transition:1s;
   color:#21A8DF;
-   }
+}
 
 div#conteudo:after {
-   content:".";
-   display:block;
-   height:0;
-   clear:both;
-   visibility:hidden;
-   }
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
 
 #conteudo .linha_conteudo {
-   clear:both;
-   height:1px;
-   width:948px;
-   border-bottom:1px solid #DCDCDC;
-   margin-left:13px;
-   }
-
-
-/*CONTEUDO BLOCO ESQUERDO --> */
-#conteudo .bloco-esquerdo img {
-   margin-top:15px;
-   width:300px; 
-   height:150px;
-   }
-
-#conteudo .bloco-esquerdo .titulo {
-   color:#21A8DF ;
-   font: 20px 'Droid Sans', sans-serif ;
-   padding:3px 0 6px 2px;
-   }
-
-#conteudo .bloco-esquerdo .descri {
-   font: 15px 'Droid Sans', sans-serif ;
-   }
-
- /* <-- CONTEUDO BLOCO ESQUERDO */  
-
-
- /*CONTEUDO BLOCO CENTRAL --> */
-#conteudo .bloco-central img {
-   margin-top:15px;
-   margin-left:8px;
-   width:300px; 
-   height:150px;
-   }
-
-#conteudo .bloco-central .titulo {
-   color:#21A8DF ;
-   margin-left:8px;
-   font: 20px 'Droid Sans', sans-serif ;
-   padding:3px 0 6px 2px;
-   }
-
-#conteudo .bloco-central .descri {
-   margin-left:8px;
-   font: 15px 'Droid Sans', sans-serif ;
-   }
-
- /* <-- CONTEUDO BLOCO CENTRAL */ 
-
- /*CONTEUDO BLOCO DIREITO --> */
-#conteudo .bloco-direito img {
-   margin-top:15px;
-   margin-left:15px;
-   width:300px; 
-   height:150px;
-   }
-
-#conteudo .bloco-direito .titulo {
-   color:#21A8DF ;
-   font: 20px 'Droid Sans', sans-serif ;
-   padding:3px 0 6px 2px;
-   margin-left:15px;
-   }
-
-#conteudo .bloco-direito .descri {
-   font: 15px 'Droid Sans', sans-serif ;
-   margin-left:15px;
-   }
-
- /* <-- CONTEUDO BLOCO DIREITO */ 
+  clear:both;
+  height:1px;
+  width:948px;
+  border-bottom:1px solid #DCDCDC;
+  margin-left:13px;
+}
 
 #conteudo .bloco-esquerdo {
-   float:left;
-   margin-left:13px;
-   border:1px solid #DCDCDC;
-   border-left:0;
-   border-top:0;
-   width:316px;
-   height:230px;
-   }
+  float:left;
+  margin-left:13px;
+  border:1px solid #DCDCDC;
+  border-left:0;
+  border-top:0;
+  width:316px;
+  height:230px;
+}
 
 #conteudo .bloco-central {
-   float:left;
-   border:1px solid #DCDCDC;
-   border-left:0;
-   width:316px;
-   height:230px;
-   border-top:0;
-   }
+  float:left;
+  border:1px solid #DCDCDC;
+  border-left:0;
+  width:316px;
+  height:230px;
+  border-top:0;
+}
 
 #conteudo .bloco-direito {
-   float:left;
-   border-bottom:1px solid #DCDCDC;
-    width:316px;
-   height:230px;
-   }
+  float:left;
+  border-bottom:1px solid #DCDCDC;
+  width:316px;
+  height:230px;
+}
+/* FIM CONTEÚDO DA PÁGINA */
 
 
 /* RODAPÉ DA PÁGINA */   
-
 div#rodape {
-   width:100%;
-   height:100px;
-   background:#000;
-   }
+  width:100%;
+  height:100px;
+  background:#000;
+}
 
 div#conteudo_rodape {
-   padding-top:12px;
-   color:#fff;
-   width:980px;
-   margin: 0 auto;
+  padding-top:12px;
+  color:#fff;
+  width:980px;
+  margin: 0 auto;
 }
 
 div#conteudo_rodape p {
-   font-family:'Droid Sans', sans-serif ;
-   }
+  font-family:'Droid Sans', sans-serif ;
+}
+/* FIM RODAPÉ DA PÁGINA */
+
 
 /* PAINEL DE CONTROLE - PHP --> */
-
 body#painel .linha_conteudo {
-   margin-bottom:15px;
-   }
+  margin-bottom:15px;
+}
 
 body#painel #conteudo {
   height:750px;
-   }
-
-div.opcao {
-   margin:10px 0 0 15px;
-   width:210px;
-   height:51px;
-   background: #fff url(../imagens/opcao.png);
-   float:left;
-   font: 19px 'Droid Sans', sans-serif ;
-   color:#000;
-   padding-top:30px;
-   text-align:center;
-   }
-
-div.opcao:hover {
-   margin:10px 0 0 15px;
-   width:210px;
-   height:51px;
-   background: #fff url(../imagens/opcao_hover.png);
-   float:left;
-   color:#000;
-   }
-
-div.opcao a  {
-   width:150px;
-   height:150px;
-   text-decoration:none;
-
-   }
-
+}
 /* <-- PAINEL DE CONTROLE - PHP */
 
-/* GERENCIAR GÊNERO PHP */
 
+/* GERENCIAR GÊNERO PHP */
 body#gerencia_gen #conteudo .bloco-gerencia   {
-    position:relative;
-  }
+  position:relative;
+}
 
 body#gerencia_gen #conteudo  p.descri {
-    position:absolute;
-    right:16px;
-    bottom:15px;
-    color:#000;
-  }
+  position:absolute;
+  right:16px;
+  bottom:15px;
+  color:#000;
+}
 
 body#gerencia_gen #conteudo  p.descri a {
-     color:#000;
-  }
-
+  color:#000;
+}
 
 body#gerencia_gen #conteudo p#add{
-     float:right;
-     font:40px 'Droid Sans', sans-serif  ;
-     margin-top:20px;
-     margin-right:15px;
-     color:#000;
-     }
-
+  float:right;
+  font:40px 'Droid Sans', sans-serif  ;
+  margin-top:20px;
+  margin-right:15px;
+  color:#000;
+}
 
 body#gerencia_gen #conteudo p#add img{
-     margin-top:2px;
-     float:left;
-     display:block;
-     width:40px;
-     height:40px;
-  }
-
+  margin-top:2px;
+  float:left;
+  display:block;
+  width:40px;
+  height:40px;
+}
 /* FIM GERENCIAR GÊNERO PHP */
 
-/* ADICIONAR GÊNERO PHP */
 
+/* ADICIONAR GÊNERO PHP */
 #login_table{
-  height: 200px;
+  text-align: center;
+  position: relative;
   margin: 0 auto;
-  border: none;
-  margin-top: 50px;
+  height: 330px;
+  font: 19px 'Droid Sans', sans-serif ;
 }
 
 #login_table textarea {
-  margin-bottom: 10px;
   height: 100px;
   width: 250px;
-  border: none;
+  border: 0 auto;
   border-radius: 5px;
   background-color: #EEE;
-  padding: 4px;
 }
 
-.textotd {
-   margin: 6px 5px 10px 15px;
-   background: #fff;
-   float:left;
-   font: 19px 'Droid Sans', sans-serif ;
-   color:#000;
-}
-
-.botao{
-  display:block;
-  margin: 0 auto;
-  cursor: pointer;
-  font: bold 18px Calibri;
-  text-decoration: none;
-  background-color: #EEEEEE;
-  color: #333333;
-  padding: 2px 6px 2px 6px;
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;
+.campo {
+  height: 20px;
+  width: 180px;
+  border: 0 auto;
+  border-radius: 5px;
+  background-color: #EEE;
 }
 
 .txt{
@@ -409,3 +290,12 @@ body#gerencia_gen #conteudo p#add img{
   background-color: #CCC;
 }
 
+.botao{
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  font: bold 18px Calibri;
+  border: 1px solid #333333;
+  padding: 2px 6px 2px 6px;
+  border-radius: 5px;
+}

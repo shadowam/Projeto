@@ -1,6 +1,5 @@
 <?php 
 
-  require_once "sistema/config.php"; // requerindo as variáveis do config.php
   require_once "sistema/conexoes.php"; // requerindo as variáveis do conexoes.php
   require_once "sistema/funcoes.php"; // requerindo as funções do funcoes.php
 

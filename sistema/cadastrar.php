@@ -1,6 +1,5 @@
 <?php
 
-  require_once "config.php"; // requerindo as variáveis do config.php
   require_once "conexoes.php"; // requerindo as variáveis do config.php
   require_once "funcoes.php"; // requerindo as funções do config.php
 
@@ -13,11 +12,11 @@
   $login = $cadastro['user_login'];
   $senha = $cadastro['user_pw'];
 
- // Comando SQL de verificação de autenticação
+  // Comando SQL de verificação de autenticação
   $sel = "SELECT * FROM user WHERE user_login = '$login'";
 
   //Efetua uma query no banco usando a variável $sel. Em caso de erro a mensagem é informada na tela
-  $query = mysqli_query($link, $sel) or die ("Erro na seleção da tabela.");
+  $query = mysqli_query($mysql, $sel) or die ("Erro na seleção da tabela.");
 
   if (mysqli_num_rows ($query) == 1) {
     echo "<script>alert('Login digitado já cadastrado no sistema.\\nPor favor escolha outro.'); history.back();</script>"; 
@@ -35,7 +34,7 @@
       $sel = "SELECT * FROM user WHERE user_login = '$login' AND user_pw = '$senha'";
 
       //Efetua uma query no banco usando a variável $sel. Em caso de erro a mensagem é informada na tela
-      $result = mysqli_query($link, $sel) or die ("Erro na seleção da tabela.");
+      $result = mysqli_query($mysql, $sel) or die ("Erro na seleção da tabela.");
 
       //Caso consiga logar, cria a sessão
       if (mysqli_num_rows ($result) == 1) {
