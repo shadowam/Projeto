@@ -1,14 +1,9 @@
-<?php 
-
-  require_once "sistema/conexoes.php"; // requerindo as variáveis do conexoes.php
-  require_once "sistema/funcoes.php"; // requerindo as funções do funcoes.php
-
+<?php
+  session_start();
 ?>
 
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
-
   <head>
       <title>Música Brasil - Tudo sobre a música brasileira</title>
       <meta http-equiv="content-type" content="text/html;charset=utf-8" />
@@ -20,7 +15,6 @@
       <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' />
       <link rel="icon" type="image/png" href="imagens/favicon.ico" />
   </head>
-
   <body>
   	<div id="topo"> 
       <div id="top_conteudo">
@@ -32,7 +26,6 @@
   	    <p id="site_nome"><a href="index.php" ><span>música</span>brasil</a></p>
       </div> <!-- FIM DA DIV top_conteudo -->
     </div> <!-- FIM DA DIV topo -->
-
   	<div id="conteudo">
       <img src="imagens/principal.png" alt="Música Brasil" /> 
 
@@ -72,9 +65,9 @@
 
   	<div id="rodape">
   		<div id="conteudo_rodape">
-          <p>Copyright &copy;MúsicaBrasil 2015 musicabasil.net - Thiagos Produções S.A</p> 		
-      </div > <!-- FIM DA DIV conteudo_rodape -->
+			<p>Copyright &copy;MúsicaBrasil 2015 musicabasil.net - Thiagos Produções S.A</p>
+			<a href="loginadm.php" class="painel"><img src="imagens/painel.png" alt="engrenagens" title="Login Administrador"/></a>	
+		</div > <!-- FIM DA DIV conteudo_rodape -->
     </div> <!-- FIM DA DIV rodape -->
-
   </body>
 </html>

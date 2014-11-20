@@ -1,5 +1,13 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php
+  session_start();
 
+  if(!isset($_SESSION['sess_admin_id']) || (trim($_SESSION['sess_admin_id']) == '')) {
+    header("location: ../index.php");
+    exit();
+  }
+?>
+
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
   <head>
     <title>Música Brasil - Tudo sobre a música brasileira</title>
@@ -16,6 +24,7 @@
     <div id="topo"> 
       <div id="top_conteudo">
         <p id="site_nome"><a href="../index.php" ><span>música</span>brasil</a></p>
+        <div class="bemvindo">Bem vindo(a) <?php echo $_SESSION["sess_admin_nome"]; ?>.<a class="sair" href="../sistema/logout.php">Sair</a></div>
         <a href="painel.php" class="painel"><img src="../imagens/painel.png" alt="engrenagens" title="Obs: Só será visivel ao ADMIN !"/></a>
         <div id="divisao"> </div>
         <ul id="nave">

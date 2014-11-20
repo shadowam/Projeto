@@ -1,7 +1,12 @@
 <?php
   require_once "sistema/conexoes.php"; // requerindo as variáveis do config.php
 
-  include "sistema/session.php";
+  session_start();
+
+  if(!isset($_SESSION['sess_user_id']) || (trim($_SESSION['sess_user_id']) == '')) {
+    header("location: index.php");
+    exit();
+  }
 ?>
 
 <!DOCTYPE html>
@@ -57,9 +62,9 @@
     <div id="topo"> 
       <div id="top_conteudo"> 
         <p id="site_nome"><a href="index.php" ><span>música</span>brasil</a></p>
-        <div class="bemvindo">Bem vindo(a) <?php echo $_SESSION['user_nome']; ?>.<a class="sair" href="sistema/logout.php">Sair</a></div>
+        <div class="bemvindo">Bem vindo(a) <?php echo $_SESSION["sess_user_nome"]; ?>.<a class="sair" href="sistema/logout.php">Sair</a></div>
         
-        <a href="painel/painel.php" class="painel"><img src="imagens/painel.png" alt="engrenagens" title="Obs: Só será visivel ao ADMIN !"/></a>
+        <a href="painel/painel.php" class="painel"><img src="imagens/painel.png" alt="engrenagens" title="Login Administrador"/></a>
         
         <div id="divisao"> </div>
 
@@ -81,10 +86,10 @@
         while($dado = $dados->fetch_assoc()) {
           print "       
             <div class='bloco'>
-            <div class='imagem'>
-              <a href='generos/".($dado['gen_nome']).".php''>  
-                <img src='".$dado['gen_foto']."' alt='".utf8_decode($dado['gen_nome'])."' title='".utf8_decode($dado['gen_nome'])."' />
-              </a>
+              <div class='imagem'>
+                <a href='generos/".($dado['gen_nome']).".php''>  
+                  <img src='".$dado['gen_foto']."' alt='".utf8_decode($dado['gen_nome'])."' title='".utf8_decode($dado['gen_nome'])."' />
+                </a>
               </div>
               <p class='titulo'><a id='sub' href='generos/".utf8_decode($dado['gen_nome']).".php'>".utf8_decode($dado['gen_nome'])."</a></p>
               <p class='descri'>Ópera, Sinfonia,  Sonata</p>

@@ -172,9 +172,9 @@ p#site_nome a {
 
 .bloco {
   display: inline-block;
-  margin: 12px 0 0 12px;
+  margin: 12px -4px 0 12px;
   height: 230px;
-  width: 307px;
+  width: 31.68%;
   border: 1px solid #DCDCDC;
 }
 
@@ -183,6 +183,7 @@ p#site_nome a {
   margin: 3px auto auto auto;
   width:300px;
   height: 150px;
+  border-bottom: 1px solid #DCDCDC;
 }
 
 .bloco .titulo {

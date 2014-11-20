@@ -1,5 +1,10 @@
 <?php
-  require_once "../sistema/conexoes.php"; // requerindo as variáveis do config.php
+  session_start();
+
+  if(!isset($_SESSION['sess_admin_id']) || (trim($_SESSION['sess_admin_id']) == '')) {
+    header("location: ../index.php");
+    exit();
+  }
 ?>
 
 <!DOCTYPE html>

@@ -1,9 +1,13 @@
+
 <?php
+  require_once "../sistema/conexoes.php"; // requerindo as variáveis do config.php
+  
+  session_start();
 
-  require_once "../sistema/conexoes.php"; // requerindo as variáveis do conexoes.php
-  require_once "../sistema/funcoes.php"; // requerindo as funções do funcoes.php
-
-  include "../sistema/session.php";
+  if(!isset($_SESSION['sess_user_id']) || (trim($_SESSION['sess_user_id']) == '')) {
+    header("location: ../index.php");
+    exit();
+  }
 
 ?>
 
@@ -38,7 +42,7 @@
     <div id="topo"> 
       <div id="top_conteudo"> 
         <p id="site_nome"><a href="../generos.php" ><span>música</span>brasil</a></p>
-        <div class="bemvindo">Bem vindo(a) <?php echo $_SESSION['user_nome']; ?>.<a class="sair" href="../sistema/logout.php">Sair</a></div>
+        <div class="bemvindo">Bem vindo(a) <?php echo $_SESSION['sess_user_nome']; ?>.<a class="sair" href="../sistema/logout.php">Sair</a></div>
         
         <!--
         <a href="painel/painel.php" class="painel"><img src="../imagens/painel.png" alt="engrenagens" title="Obs: Só será visivel ao ADMIN !"/></a>
