@@ -4,7 +4,7 @@
   
   session_start();
 
-  if(!isset($_SESSION['sess_user_id']) || (trim($_SESSION['sess_user_id']) == '')) {
+  if(!isset($_SESSION['sess_user_id']) && !isset($_SESSION['sess_admin_id'])) {
     header("location: index.php");
     exit();
   }

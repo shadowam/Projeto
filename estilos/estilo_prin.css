@@ -209,6 +209,22 @@ p#site_nome a {
   text-decoration: none;
   color: #21A8DF;
 }
+
+.botao{
+  float: right;
+  cursor: pointer;
+  font: bold 18px Calibri;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  margin-top: 30px;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
 /* FIM DO CONTEÚDO DA PÁGINA */
 
 
@@ -218,7 +234,7 @@ p#site_nome a {
   margin: 0 0 3px 12px;
   width: 98.1%;
 }
-.accordion .accordion-head {
+.accordion-head {
   margin-top: 2px;
   color: #000;
   background-color: #fff;
@@ -228,14 +244,14 @@ p#site_nome a {
   padding: 5px;
   cursor: pointer;
 }
-.accordion .accordion-head h3 {
+.accordion-head h3 {
   text-align: center;
 }
-.accordion .accordion-head:hover {
+.accordion-head:hover {
   filter: alpha(opacity=60);
   opacity: 0.60;
 }
-.accordion .accordion-body {
+.accordion-body {
   text-align: justify;
   background-color: #EDEDED;
   border: 1px solid #000;
@@ -246,6 +262,13 @@ p#site_nome a {
   width: 94.6%;
   display: none;
   margin: 0 2px 10px 10px;
+}
+
+.accordion-body textarea {
+  overflow: auto;
+  outline: none;
+  resize: inherit;
+  width: 94%;
 }
 
 .arrow2 {

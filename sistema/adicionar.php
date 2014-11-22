@@ -1,6 +1,7 @@
 <?php
-
   require_once "conexoes.php"; // requerindo as variáveis do config.php
+
+  session_start();
 
   function GetImageExtension($imagetype) {
     if(empty($imagetype)) return false;

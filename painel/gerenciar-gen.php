@@ -7,6 +7,37 @@
     header("location: ../index.php");
     exit();
   }
+  
+  // quantidade máxima de registros exibidos por página
+  $registros = 6;
+
+  // define a página atual onde o usuário se encontra
+  // verifica se o usuário clicou na lista de páginas
+  // da paginação PHP e atribui a página clicada ou 1
+  // para a página atual
+  $pagina_atual = isset($_REQUEST['pagina'])? intval($_REQUEST['pagina']) : 1;
+
+  // encontra a quantidade total de registros no banco de dados ordenados pelo ID
+  $resultado = $mysql->query("SELECT count(*) AS total FROM genero ORDER BY gen_id")->fetch_assoc();
+  $registros_total = $resultado['total'];
+
+  // calculo para encontrar o total
+  // de páginas necessárias para a paginação
+  $paginas = ceil($registros_total / $registros);
+
+  // Calcula os intervalos iniciais e finais
+  // para saber quais registros vamos mostrar
+  $fim = $registros * $pagina_atual;
+  $inicio = ($fim - $registros);
+
+  // utilizamos o limite inicial com a quantidade máxima de registros retornados pela consulta.
+  // a consulta agora está ordenada por nome do país
+  $sql = "SELECT * FROM genero ORDER BY gen_id LIMIT {$inicio}, {$registros}";
+  $dados = $mysql->query($sql);          
+
+  // Fecha a conexão com o banco de dados
+  $mysql->close();
+
 ?>
 
 <!DOCTYPE html>
@@ -23,40 +54,6 @@
     <link rel="icon" type="image/png" href="imagens/favicon.ico" />
   </head>
   <body id="gerencia_gen">
-    <?php
-
-      // quantidade máxima de
-      // registros exibidos por página
-      $registros = 9;
-
-      // define a página atual onde o usuário se encontra
-      // verifica se o usuário clicou na lista de páginas
-      // da paginação PHP e atribui a página clicada ou 1
-      // para a página atual
-      $pagina_atual = isset($_REQUEST['pagina'])? intval($_REQUEST['pagina']) : 1;
-
-      // encontra a quantidade total de registros no banco de dados ordenados pelo ID
-      $resultado = $mysql->query("SELECT count(*) AS total FROM genero ORDER BY gen_id")->fetch_assoc();
-      $registros_total = $resultado['total'];
-
-      // calculo para encontrar o total
-      // de páginas necessárias para a paginação
-      $paginas = ceil($registros_total / $registros);
-
-      // Calcula os intervalos iniciais e finais
-      // para saber quais registros vamos mostrar
-      $fim = $registros * $pagina_atual;
-      $inicio = ($fim - $registros);
-
-      // utilizamos o limite inicial com a quantidade máxima de registros retornados pela consulta.
-      // a consulta agora está ordenada por nome do país
-      $sql = "SELECT * FROM genero ORDER BY gen_id LIMIT {$inicio}, {$registros}";
-      $dados = $mysql->query($sql);                        
-
-      // Fecha a conexão com o banco de dados
-      $mysql->close();
-
-    ?>
     <div id="topo"> 
       <div id="top_conteudo">
         <p id="site_nome"><a href="../index.php" ><span>música</span>brasil</a></p>
@@ -88,7 +85,7 @@
                 </a>
               </div>
               <p class='titulo'><a id='sub' href='generos/".utf8_decode($dado['gen_nome']).".php'>".utf8_decode($dado['gen_nome'])."</a></p>
-              <p class='descri'><a href='#''>EDITAR</a> | <a href='#''>EXCLUIR</a></p>
+              <p class='descri'><a href='edita-gen.php?id=".$dado['gen_id']."'>EDITAR</a> | <a onclick='return confirm(\"Confirma exclusão do gênero ".$dado['gen_nome']."?\")' href='../sistema/excluir.php?id=".$dado['gen_id']."'>EXCLUIR</a></p>
             </div> ";
         }
       ?>
