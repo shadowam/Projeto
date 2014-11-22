@@ -83,7 +83,7 @@
           print "       
             <div class='bloco'>
               <div class='imagem'>
-                <a href='generos/".($dado['gen_nome']).".php''>  
+                <a href='../info.php?id=".$dado['gen_id']."'>  
                   <img src='../".$dado['gen_foto']."' alt='".utf8_decode($dado['gen_nome'])."' title='".utf8_decode($dado['gen_nome'])."' />
                 </a>
               </div>

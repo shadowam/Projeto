@@ -1,23 +1,7 @@
 <?php
 	require_once "sistema/conexoes.php";
 
-	if(@$_GET['go'] == 'logar'){
-		$admin = $_POST['login'];
-		$pwd = $_POST['senha'];
-
-		$busca = "SELECT * FROM admin
-				  WHERE login = '$admin'
-				  AND senha = '$pwd'";
-
-		$resultado = mysqli_query($mysql, $busca) or die (mysqli_error($mysql));
-
-		if(mysqli_num_rows ($resultado) == 1){
-			echo "<script>alert('Administrador logado com sucesso.'); window.location.replace('./painel/painel.php');</script>";
-		}
-		else{
-			echo "<script>alert('Login ou senha inválidos.'); history.back();</script>";
-		}
-	}
+	session_start();
 ?>
 
 <!DOCTYPE html>
